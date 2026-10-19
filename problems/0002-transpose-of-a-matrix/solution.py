@@ -9,4 +9,7 @@ def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
         The transposed matrix of shape (n, m)
     """
     # Your code here
-    return [[row] for row in zip(*a)]
+    # return [[row] for row in zip(*a)]
+    import numpy as np
+    a = np.array(a)
+    return a.T
