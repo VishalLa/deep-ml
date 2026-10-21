@@ -9,7 +9,7 @@ def determinant_4x4(
     def det(mat: np.ndarray) -> int|float:
         n = mat.shape[0]
         if n == 1: return mat[0, 0]
-        if n == 2: return mat[0, 0] * mat[1, 1] - mat[0, 1] * mat[1, 0]
+        # if n == 2: return mat[0, 0] * mat[1, 1] - mat[0, 1] * mat[1, 0]
         
         total = 0.0
         
